@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="countries_list">
+        <item>Choose a country</item>
+        <item>Australia</item>
+        <item>UK</item>
+        <item>France</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+    </string-array>
+    <string-array name="airlines_list">
+        <item>Choose an airline</item>
+        <item>Quantas</item>
+        <item>Ryan Air</item>
+        <item>Easy Jet</item>
+    </string-array>
+
+</resources>
