@@ -15,5 +15,11 @@
         <item>Ryan Air</item>
         <item>Easy Jet</item>
     </string-array>
+    <string-array name="membership_type_list">
+        <item>Choose a membership type:</item>
+        <item>Premium</item>
+        <item>Budget</item>
+        <item>Free</item>
+    </string-array>
 
 </resources>

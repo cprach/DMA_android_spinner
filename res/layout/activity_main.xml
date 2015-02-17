@@ -5,22 +5,55 @@
     android:layout_margin="25dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/txtCurrentCityName"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/empty" />
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/txtCurrentAirlineName"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/txtCurrentCityNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/label_currentCityName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtCurrentCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/empty" />
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtCurrentAirlineNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/label_currentAirlineName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtCurrentAirlineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/countries_spinner"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" />
 
     <Spinner
         android:id="@+id/airlines_spinner"

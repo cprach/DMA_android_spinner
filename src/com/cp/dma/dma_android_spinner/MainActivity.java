@@ -17,13 +17,14 @@ public class MainActivity extends ActionBarActivity implements OnItemSelectedLis
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-
-
-
+		
+		populateSpinners();
+		
 	}
 
 	public void populateSpinners() {
+		
+		
 		Spinner countries_spinner = (Spinner)findViewById(R.id.countries_spinner);
 		countries_spinner.setOnItemSelectedListener(this);
 		ArrayAdapter <CharSequence> countriesAdapter = ArrayAdapter.createFromResource(this, 
@@ -31,13 +32,13 @@ public class MainActivity extends ActionBarActivity implements OnItemSelectedLis
 		countriesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		countries_spinner.setAdapter(countriesAdapter);
 
-
 		Spinner airlines_spinner = (Spinner)findViewById(R.id.airlines_spinner);
 		airlines_spinner.setOnItemSelectedListener(this);
 		ArrayAdapter <CharSequence> airlinesAdapter = ArrayAdapter.createFromResource(this, 
 				R.array.airlines_list, android.R.layout.simple_spinner_item);
 		airlinesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		airlines_spinner.setAdapter(airlinesAdapter);
+		
 	}
 
 	@Override
